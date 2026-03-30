@@ -1,0 +1,65 @@
+Option Explicit
+
+Private Sub CommandButton1_Click()
+ Dim ws As Worksheet
+ Dim Lastrow As Long
+Set ws = ThisWorkbook.Sheets("sheet11")
+Lastrow = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row + 1
+Sheet11.Cells(Lastrow, 1).Value = Number.Value
+Sheet11.Cells(Lastrow, 2).Value = Namea.Value
+Sheet11.Cells(Lastrow, 3).Value = Age.Value
+If Male.Value = True Then
+Sheet11.Cells(Lastrow, 4).Value = "Male"
+ElseIf Female.Value = True Then
+Sheet11.Cells(Lastrow, 4).Value = "FeMale"
+End If
+
+
+
+
+
+
+
+
+
+
+ 
+
+End Sub
+
+Private Sub CommandButton2_Click()
+ Number.Value = ""
+
+Namea.Value = ""
+Age.Value = ""
+Male.Value = False
+Female.Value = False
+
+End Sub
+
+Private Sub CommandButton3_Click()
+Unload Me
+End Sub
+
+Private Sub Label2_Click()
+
+End Sub
+
+Private Sub Namea_Change()
+
+End Sub
+
+Private Sub Number_Change()
+
+End Sub
+
+Private Sub UserForm_Click()
+ Number.Value = ""
+
+Namea.Value = ""
+Age.Value = ""
+Male.Value = False
+Female.Value = False
+
+
+End Sub
